@@ -31,7 +31,11 @@ public class Questions {
 
     @Column(name = "answerc")
     @JsonProperty
-    private String answerC;
+    private String answerC;;
+
+    @Column(name = "section")
+    @JsonProperty
+    public int section;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "answerCorrect_id", referencedColumnName = "id")
