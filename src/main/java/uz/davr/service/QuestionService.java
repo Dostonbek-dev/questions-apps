@@ -31,6 +31,7 @@ public class QuestionService {
         question.setAnswerA(questions.getAnswerA());
         question.setAnswerB(questions.getAnswerB());
         question.setAnswerC(save.getCorrectAnswer());
+        question.setSection(questions.getSection());
           return   repository.save(questions);
     }
 
